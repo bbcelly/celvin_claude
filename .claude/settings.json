@@ -1,1 +1,9 @@
-{}
+{
+  "mcpServers": {
+    "asana": {
+      "command": "bash",
+      "args": ["-c", "set -a && source /Users/celly/q_projects/celvin/.env && set +a && npx -y @roychri/mcp-server-asana"],
+      "env": {}
+    }
+  }
+}
