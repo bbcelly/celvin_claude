@@ -11,19 +11,33 @@ User says: "write investor report", "prepare investor report", "draft investor r
 Gather data from all available sources before writing. Not all sources may be connected -- use what's available and flag what's missing.
 
 ### 1. Asana (MCP: asana)
-- Search for the current month's investor report subtasks in workspace `413336835149603`
-- Look for tasks named "Investor report [Month] [Year] Product & Technology"
-- Also check subtasks of the parent "Investor report [Month] [Year]" task
+
+**Primary source -- biweekly status reports:**
+- Parent task GID: `1212742790406013` (in project `1212662190575399`, workspace `413336835149603`)
+- Get subtasks of this task -- they are biweekly "CZ & SK status product" reports
+- For a given report month, pull subtasks whose `due_on` falls within the month +/- 10 days
+  - Example: for March 2026 report, pull subtasks with due_on between 2026-02-19 and 2026-04-10
+- Read the full notes of each matching subtask -- this is the main raw data
+
+**Secondary source -- investor report tasks:**
+- Search for tasks named "Investor report [Month] [Year] Product & Technology"
 - Pull notes from related team tasks (other departments may have relevant cross-team info)
 
 ### 2. Slack (MCP: if available)
-- Search relevant channels for release announcements, incidents, wins, and risks
-- Key channels to check: engineering announcements, product updates, incident channels
+- Channels to pull from:
+  - `cz3-product-news-en` -- product releases and feature announcements
+  - `cz3-it-updates` -- engineering and IT updates
+  - `cz3-infrastructure` -- infrastructure changes and incidents
+  - `cz3-infra-updates` -- infrastructure status updates
 - Time range: the reporting month
+- Look for: releases, incidents, outages, metrics, wins, and risks
 
-### 3. Slab (MCP: if available)
-- Search for release notes, post-mortems, and team updates published during the month
-- Look for any monthly/weekly summaries from team leads
+### 3. Slab
+- Primary source: Product Management Status Updates post
+  - Q1 2026: https://shoptet.slab.com/posts/product-management-status-updates-2026-q-1-3czv3g1g
+  - For other quarters, ask Pavel for the URL
+- If Slab MCP is available, fetch the post content directly
+- If not, ask Pavel to paste the relevant section from the Slab post
 
 ## Report Structure
 
