@@ -29,6 +29,7 @@ Gather data from all available sources before writing. Not all sources may be co
   - `cz3-it-updates` -- engineering and IT updates
   - `cz3-infrastructure` -- infrastructure changes and incidents
   - `cz3-infra-updates` -- infrastructure status updates
+  - `cz3-incident-en` -- incidents and outages
 - Time range: the reporting month
 - Look for: releases, incidents, outages, metrics, wins, and risks
 
